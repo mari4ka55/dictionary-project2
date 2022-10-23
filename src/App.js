@@ -35,7 +35,7 @@ function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://dictionary.netlify.app/"
+            href="https://sprightly-nasturtium-c6c0ce.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
