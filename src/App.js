@@ -15,7 +15,7 @@ function App() {
             <img src={logo} className="logo" alt="Logo" />
           </a>
         </header>
-        <Dictionary defaultKeyword="sunset" />
+        <Dictionary defaultKeyword="waterfall" />
         <footer>
           This project was coded by{" "}
           <a
