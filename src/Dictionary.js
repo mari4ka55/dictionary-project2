@@ -17,7 +17,7 @@ export default function Dictionary(props) {
   function handleResponse(response) {
     setDefinition(response.data[0]);
     let apiUrl = `https://api.pexels.com/v1/search?query=${response.data[0].word}&per_page=9`;
-    let apiKey = "563492ad6f91700001000001fcd94c1777b243de94bf7f60bc16a402";
+    let apiKey = "563492ad6f9170000100000181e4bc2aaa584ca59415a998f7397915";
     axios
       .get(apiUrl, { headers: { Authorization: `Bearer ${apiKey}` } })
       .then(handleImages);
@@ -57,16 +57,14 @@ export default function Dictionary(props) {
               onChange={handleKeywordChange}
             />
           </form>
-          <small className="hint">i.e. paris, wine, yoga, coding</small>
+          <small className="hint">i.e. london, cucumber, yoga, sunset</small>
         </section>
         <Result definition={definition} />
         <Photos photos={photos} />
       </div>
-  );
-      
+    );
   } else {
     load();
-    return "Loading!"
+    return "Loading!";
   }
-
 }
